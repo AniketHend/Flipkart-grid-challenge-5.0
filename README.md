@@ -25,10 +25,10 @@
       explaining your approach, describing the algorithms or techniques used, and discussing the
       strengths and limitations of your solution.
      
-   - **Solution**
-      In this project we are sorting the diffirent products for a perticular user on the basis of cosine similarity
+## Solution
+   In this project we are sorting the diffirent products for a perticular user on the basis of cosine similarity
 
-     Cosine Similarity (Collaborative Filtering):
+   Cosine Similarity (Collaborative Filtering):
         Cosine similarity is a common approach in collaborative filtering-based recommendation systems. Collaborative filtering relies on analyzing user-item interactions to make personalized recommendations. Cosine similarity measures the similarity between users or items based on their preferences or characteristics. It's well-suited for scenarios where you have user-item interaction data, such as user ratings or purchase histories.
-        
-        In collaborative filtering, cosine similarity is used to find users who have similar preferences or items that are similar in terms of the users who like them. This allows the system to make recommendations to a user based on the preferences of similar users, effectively providing personalized recommendations.
+   In collaborative filtering, cosine similarity is used to find users who have similar preferences or items that are similar in terms of the users who like them. This allows the system to make recommendations to a user based on the preferences of similar users, effectively providing personalized recommendations.
+
