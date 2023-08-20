@@ -1,5 +1,7 @@
 # Flipkart-grid-challenge-5.0
 
+-Before heading towards the below link, please ensure that you have an account on Streamlit, if not then sign with your github account and then run.
+
 ## [Our Solution for the Flipkart Grid Engineering Campus Challenge](https://appuctrecommendation-vce7adm8hnm5ukirkuhrks.streamlit.app/)
    
   - Members
