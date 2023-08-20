@@ -8,7 +8,7 @@
   
       - [Jayndra Todawat](https://github.com/TJ_Codes)
                    
-      - [Swapnil Adsul]
+      - Swapnil Adsul
   
 ## Problem Statement: Personalized Product Recommendations
    The aim is to enhance user experience by implementing a personalized product ranking system.
