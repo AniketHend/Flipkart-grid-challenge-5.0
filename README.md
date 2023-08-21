@@ -8,7 +8,7 @@
   
       - [Aniket Hend](https://github.com/AniketHend)
   
-      - [Jayndra Todawat](https://github.com/TJ_Codes)
+      - [Jayndra Todawat](https://github.com/Jaytodawat)
                    
       - Swapnil Adsul
   
