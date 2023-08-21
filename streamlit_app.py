@@ -24,15 +24,9 @@ def get_recommendations(user_id, product_name, category, interaction_matrix, pro
 
 # Function to filter recommended products by product name and category
 def filter_by_product_name_and_category(products, product_name, category):
-     filtered_products = data[
-         (data['Product Name'] == product_name) &
-         (data['Category'] == category)
-        
-     ]
-    
+    filtered_products = data[data['Product Name'] == product_name]
+    filtered_products = filtered_products[filtered_products['Category'] == category]
     return filtered_products
-
-
 
 # Streamlit app
 def main():
