@@ -26,20 +26,20 @@ def get_recommendations(user_id, product_name, category, interaction_matrix, pro
 def filter_by_product_name_and_category(products, product_name, category):
     
     filtered_products=[]
-    if product_name in ['T-shirt', 'Jeans']:
-         tshirt_recommendations = data[
-             (data['Product Name'] == 'T-shirt') &
-             (data['Category'] == category)
-         ].head(num_recommendations/2)
+    # if product_name in ['T-shirt', 'Jeans']:
+    #      tshirt_recommendations = data[
+    #          (data['Product Name'] == 'T-shirt') &
+    #          (data['Category'] == category)
+    #      ].head(num_recommendations/2)
         
-         jeans_recommendations = data[
-             (data['Product Name'] == 'Jeans') &
-             (data['Category'] == category)  
-         ].head(num_recommendations/2)
+    #      jeans_recommendations = data[
+    #          (data['Product Name'] == 'Jeans') &
+    #          (data['Category'] == category)  
+    #      ].head(num_recommendations/2)
         
-         filtered_products = pd.concat([tshirt_recommendations, jeans_recommendations])
+    #      filtered_products = pd.concat([tshirt_recommendations, jeans_recommendations])
   
-    else:
+    # else:
          filtered_products = data[
              (data['Product Name'] == product_name) &
              (data['Category'] == category)
