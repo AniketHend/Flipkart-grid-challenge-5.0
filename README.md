@@ -2,7 +2,7 @@
 
 -Before heading towards the below link, please ensure that you have an account on Streamlit, if not then sign with your github account and then run.
 
-## [Our Solution for the Flipkart Grid Engineering Campus Challenge](https://appuctrecommendation-vce7adm8hnm5ukirkuhrks.streamlit.app/)
+## [Our Solution for the Flipkart Grid Engineering Campus Challenge](https://flipkart-grid-challenge-50-lcwatwyfcobyuqm6z2cmi9.streamlit.app/)
    
   - Members
   
