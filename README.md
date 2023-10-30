@@ -1,4 +1,4 @@
-# Flipkart-grid-challenge-5.0
+# Flipkart Grid Challenge 5.0
 
 -Before heading towards the below link, please ensure that you have an account on Streamlit, if not then sign with your github account and then run.
 
