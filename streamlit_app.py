@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # data = pd.read_csv("newdata.csv",sep="\t")
 # try:
-    data = pd.read_csv("newdata.csv", sep="\t")
+data = pd.read_csv("newdata.csv", sep="\t")
 # except Exception as e:
 #     print(f"An error occurred: {str(e)}")
 
