@@ -5,13 +5,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 # data = pd.read_csv("newdata.csv",sep="\t")
-try:
+# try:
     data = pd.read_csv("newdata.csv", sep="\t")
-except Exception as e:
-    print(f"An error occurred: {str(e)}")
+# except Exception as e:
+#     print(f"An error occurred: {str(e)}")
 
 # Create interaction matrix and find similarity
-interaction_matrix = data.pivot_table(index='User ID', columns='book name', values='Rating', fill_value=0)
+interaction_matrix = data.pivot_table(index='User ID', columns='book id', values='Rating', fill_value=0)
 product_similarity = cosine_similarity(interaction_matrix.T)
 
 # Function to get product recommendations based on product name and category
