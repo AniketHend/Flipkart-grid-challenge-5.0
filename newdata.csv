@@ -1,0 +1,63 @@
+User ID,book id,book name,auther,genre,Price,Rating,publication ,number of pages
+19,1,The Hitchhiker's Guide to the Galaxy,Agatha Christie,,40,1.043159211,"Alfred A. Knopf, Inc.",323
+97,2,Animal Farm,Alice Munro,Adventure,82,4.026416271,Bloomsbury Publishing Plc,432
+25,3,1984,Arundhati Roy,Chick lit,44,3.337937559,Doubleday Books,432
+57,4,The Catcher in the Rye,Toni Morrison,Children's,23,1.049522956,Ecco Press,324
+79,5,To Kill a Mockingbird,Virginia Woolf,Coming of age,79,4.302773408,"Farrar, Straus and Giroux, Inc.",544
+98,6,The Lord of the Rings,Walter Isaacson,Crime,47,1.37956574,HarperCollins Publishers LLC,544
+16,7,The Great Gatsby,William Faulkner,Dark comedy,37,1.356750375,Houghton Mifflin Harcourt Publishing Company,643
+63,8,One Hundred Years of Solitude,William Shakespeare,Dystopian,64,4.360303289,"Little, Brown and Company",875
+96,9,Pride and Prejudice,Zadie Smith,Epic fantasy,53,4.466181876,Macmillan Publishers International Limited,654
+36,10,Crime and Punishment,Salman Rushdie,Fairy tale,55,4.093234402,Penguin Random House LLC,453
+69,11,The Metamorphosis,Stephen King,Fan fiction,51,1.160987957,"Simon & Schuster, Inc.",765
+87,12,A Brief History of Time,Suzanne Collins,Historical fiction,91,2.699735538,Aleph Book Company Pvt Ltd,864
+9,13,Sapiens: A Brief History of Humankind,Sylvia Plath,Horror,35,1.60119358,Bloomsbury India Pvt Ltd,876
+50,14,Man's Search for Meaning,Ta-Nehisi Coates,LGBTQ+,34,2.921004204,HarperCollins Publishers India Private Limited,342
+31,15,The Autobiography of Malcolm X,Ted Chiang,Magic realism,54,3.670412239,Juggernaut Books Pvt Ltd,453
+37,16,"Thinking, Fast and Slow",Toni Morrison,Mystery,27,1.422716143,Penguin Random House India Private Limited,456
+41,17,The Art of War,Ursula K. Le Guin,Paranormal,75,1.480632132,Rupa Publications India Pvt. Ltd.,231
+15,18,Meditations,Virginia Woolf,Political thriller,73,4.498244681,Westland Books Pvt. Ltd.,323
+84,19,The Prince,Vladimir Nabokov,Romance,54,3.278340556,asicBooks,656
+56,20,On Tyranny: Twenty Lessons from the Twentieth Century,Walt Whitman,Science fiction,53,3.785245245,FarrarStrausandGirouxInc,789
+87,21,Between the World and Me,William Faulkner,Short story,56,2.609587353,HarperCollinsPublishersLLC,546
+56,22,How to Win Friends and Influence People,William Shakespeare,Slice of life,89,4.568632343,HoughtonMifflinHarcourtPublishingCompany,564
+60,23,The Alchemist,Yann Martel,Speculative fiction,91,4.072724797,LiverightPublishingCorporation,342
+64,24,The Hunger Games,Zadie Smith,Sports,15,2.499756274,WWNorton&CompanyInc,453
+65,25,The Martian,J.R.R. Tolkien,Superhero,38,1.020492671,OxfordUniversityPress,554
+26,26,Where the Wild Things Are,Jane Austen,Thriller,21,4.748169005,RandomHouseInc,432
+82,27,The Curious Incident of the Dog in the Night-Time,Jeff VanderMeer,Urban fantasy,72,3.301743408,RiverheadBooks,453
+87,28,The Handmaid's Tale,Jennifer Egan,Western,32,2.82280286,Scribner,453
+98,29,The Book Thief,Joan Didion,Non-Fiction:,85,4.940985221,WWNorton&CompanyInc,345
+20,30,The Kite Runner,John Green,Art,99,3.110113573,CambridgeUniversityPress,453
+36,31,A Thousand Splendid Suns,Jonathan Franzen,Biography,37,2.755187149,ElsevierBV,908
+98,32,The Girl with the Dragon Tattoo,Joseph Heller,Business,78,3.44728947,OxfordUniversityPress,789
+69,33,The House on Mango Street,Joyce Carol Oates,Cookery,89,4.799409019,SpringerNature,879
+31,34,The Absolutely True Diary of a Part-Time Indian,J.K. Rowling,Education,80,3.92326116,JohnWiley&SonsInc,675
+48,35,Wonder,Junot Díaz,Geography,37,4.173991568,TheAtlanticMonthlyGroup,675
+18,36,The Fault in Our Stars,Khaled Hosseini,Health and fitness,74,1.014996128,TheEconomistGroup,564
+27,37,All the Light We Cannot See,Kurt Vonnegut,History,48,4.947664783,TheNewYorkTimesCompany,675
+60,38,The Hate U Give,Margaret Atwood,Humor,76,2.663067924,CondeNast,564
+46,39,The Book of Joy,Marlon James,Memoir,90,1.788771519,TheWashingtonPostCompany,234
+84,40,Becoming,Mary Shelley,Music,26,2.435611336,TimeInc,125
+43,41,Educated,Michael Ondaatje,Nature,40,2.922173646,DowJones&CompanyInc,764
+43,42,Where the Crawdads Sing,Michelle Alexander,Philosophy,43,1.671958886,TheParisReviewFoundation,897
+91,43,A Good Marriage,Milan Kundera,Politics,39,3.601868547,ModernPoetryAssociation,786
+78,44,The Midnight Library,Murakami Haruki,Psychology,74,2.039156739,CondeNast,654
+60,45,Hamnet,Neil Gaiman,Religion,85,4.886711103,TheAtlanticMonthlyGroup,678
+44,46,Circe,Ngugi wa Thiong'o,Science,38,2.827869831,HarpersMagazineFoundation,234
+93,47,The Invisible Life of Addie LaRue,Octavia E. Butler,Self-help,62,1.280731686,AlephBookCompanyPvtLtd,213
+74,48,The Midnight Bargain,Orhan Pamuk,Sports,10,1.836963966,BloomsburyIndiaPvtLtd,342
+19,49,Pachinko,Oscar Wilde,Travel,52,3.012240786,HarperCollinsPublishersIndiaPrivateLimited,342
+98,50,The House in the Cerulean Sea,Paulo Coelho,Dystopian,38,3.083285933,JuggernautBooksPvtLtd,564
+51,51,The Thursday Murder Club,Philip Roth,Dystopian,67,3.842990023,PenguinRandomHouseIndiaPrivateLimited,564
+80,52,The Midnight Gang,Rabindranath Tagore,Dystopian,59,3.964195138,RupaPublicationsIndiaPvtLtd,567
+39,53,The Invisible Life of Bees,Salman Rushdie,Dystopian,16,1.29231997,WestlandBooksPvtLtd,546
+33,54,Little Fires Everywhere,Samuel Beckett,Dystopian,33,2.450522629,CondeEast,876
+78,55,The Girl with the Dragon Tattoo,Sandra Cisneros,Dystopian,76,2.820647079,Balbharti,789
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
