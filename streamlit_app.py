@@ -6,9 +6,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # data = pd.read_csv("newdata.csv",sep="\t")
 # try:
-data = pd.read_csv("newdata.csv", sep="\t",encoding='utf-8')
+# data = pd.read_csv("newdata.csv", sep="\t",encoding='utf-8')
 # except Exception as e:
 #     print(f"An error occurred: {str(e)}")
+data = pd.read_csv("newdata.csv", sep="\t", encoding=result['encoding'])
 
 # Create interaction matrix and find similarity
 interaction_matrix = data.pivot_table(index='User ID', columns='book id', values='Rating', fill_value=0)
