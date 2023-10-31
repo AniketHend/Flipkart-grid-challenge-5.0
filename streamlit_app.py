@@ -3,7 +3,10 @@ import pandas as pd
 import random
 from sklearn.metrics.pairwise import cosine_similarity
 
+import chardet
 
+with open("newdata.csv", 'rb') as f:
+    result = chardet.detect(f.read())
 # data = pd.read_csv("newdata.csv",sep="\t")
 # try:
 # data = pd.read_csv("newdata.csv", sep="\t",encoding='utf-8')
