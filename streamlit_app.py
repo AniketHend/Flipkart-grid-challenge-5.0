@@ -3,7 +3,7 @@ import pandas as pd
 import random
 
 # Load data
-data = pd.read_csv("newdata.csv")
+data = pd.read_csv("newdata.csv",encoding="utf-8")
 
 # Function to get popular books in the same genre
 def get_recommendations(book_name, genre, num_recommendations=2):
