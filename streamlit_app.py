@@ -1,43 +1,91 @@
 import streamlit as st
 import pandas as pd
 import random
+from sklearn.metrics.pairwise import cosine_similarity
 
-# Load data
-data = pd.read_csv("newdata.csv",encoding="utf-8")
 
-# Function to get popular books in the same genre
-def get_recommendations(book_name, genre, num_recommendations=2):
-    filtered_books = data[(data['genre'] == genre) & (data['book name'] != book_name)]
-    if filtered_books.empty:
-        return None
+data = pd.read_csv("fashion_products.csv")
+
+# Create interaction matrix and find similarity
+interaction_matrix = data.pivot_table(index='User ID', columns='Product ID', values='Rating', fill_value=0)
+product_similarity = cosine_similarity(interaction_matrix.T)
+
+# Function to get product recommendations based on product name and category
+def get_recommendations(user_id, product_name, category, interaction_matrix, product_similarity, num_recommendations=50):
+    user_interactions = interaction_matrix.loc[user_id].values
+    similar_scores = product_similarity.dot(user_interactions)
+    recommended_indices = similar_scores.argsort()[-num_recommendations:][::-1]
+    recommended_products = interaction_matrix.columns[recommended_indices]
     
-    popular_recommendations = filtered_books.nlargest(num_recommendations, 'Rating')[['book name', 'genre']]
-    return popular_recommendations
+    # Filter recommended products by product name and category
+    filtered_products = filter_by_product_name_and_category(recommended_products, product_name, category)
+    
+    return filtered_products
+
+# Function to filter recommended products by product name and category
+def filter_by_product_name_and_category(products, product_name, category):
+    
+    filtered_products=[]
+    if product_name in ['T-shirt', 'Jeans']:
+         tshirt_recommendations = data[
+             (data['Product Name'] == 'T-shirt') &
+             (data['Category'] == category)
+         ].head(num_recommendations/2)
+        
+         jeans_recommendations = data[
+             (data['Product Name'] == 'Jeans') &
+             (data['Category'] == category)  
+         ].head(num_recommendations/2)
+        
+         filtered_products = pd.concat([tshirt_recommendations, jeans_recommendations])
+  
+    else:
+         filtered_products = data[
+             (data['Product Name'] == product_name) &
+             (data['Category'] == category)
+            
+         ]
+    
+    return filtered_products
+
+
 
 # Streamlit app
 def main():
     
     st.set_page_config(
-        page_title="Book Recommender",
-        page_icon="📚",
+        page_title="Fashion Product Recommender",
+        page_icon="🛍️",
+        
     )
 
-    st.title("Book Recommender")
-    st.markdown("Discover personalized book recommendations.")
+    
+    st.title("Fashion Product Recommender")
+    st.markdown("Discover personalized fashion product recommendations.")
     
     # User input
-    book_name = st.selectbox("Select Book Name", data['book name'].unique())
-    genre = st.selectbox("Select Genre", data['genre'].unique())
+    user_id = st.number_input("Enter User ID", min_value=1, max_value=1000)
+    product_name = st.selectbox("Select Product Name", data['Product Name'].unique())
+    category = st.selectbox("Select Category", data['Category'].unique())
    
     # Recommendation button
     if st.button("Get Recommendations"):
-        recommendations = get_recommendations(book_name, genre)
+        recommendations = get_recommendations(user_id, product_name, category, interaction_matrix, product_similarity)
         
-        if recommendations is not None and not recommendations.empty:
-            st.subheader("Recommended Books:")
-            st.table(recommendations)
+        if len(recommendations) > 10:
+            random_recommendations = random.sample(list(recommendations['Product ID']), 10)
         else:
-            st.subheader("No Recommendations Found")
+            random_recommendations = list(recommendations['Product ID'])
+        
+        # Display recommended products
+        st.subheader("Recommended Products:")
+        recommended_products_info = data[data['Product ID'].isin(random_recommendations)][['Product ID', 'Product Name', 'Category', 'Brand', 'Color']]
+        st.table(recommended_products_info)
+        
+        # Display user's history
+        st.subheader("User History:")
+        user_products_info = data[data['User ID'] == user_id][['Product Name', 'Category', 'Brand', 'Color']].drop_duplicates()
+        st.table(user_products_info)
 
 if __name__ == "__main__":
     main()
